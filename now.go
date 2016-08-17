@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+//now开始时间，是从哪分钟开始的  精确到秒
 func (now *Now) BeginningOfMinute() time.Time {
 	return now.Truncate(time.Minute)
 }
